@@ -7,6 +7,7 @@ function App() {
     firstname:"",
     lastname:"",
     address:"",
+    phon:"",
     email:"",
     gender:"",
     dob:"",
@@ -31,6 +32,7 @@ function App() {
       firstname:"",
       lastname:"",
       address:"",
+      phon:"",
       email:"",
       gender:"",
       dob:"",
@@ -49,6 +51,7 @@ function App() {
         </div>
         <div>
           <input type="text" name='address' value={inputs.address} onChange={handleChange} placeholder='address' className='form-control' required />
+          <input type="tel" name='phon' value={inputs.phon} onChange={handleChange} placeholder='phon number' className='form-control mt-2' required />
           <input type="email" name='email' value={inputs.email} onChange={handleChange} placeholder='E-mail' className='form-control mt-2' required />
         </div>
         <div className="gender">
@@ -62,7 +65,7 @@ function App() {
           <input type="date" id="dob" name="dob" value={inputs.dob} onChange={handleChange} required />
         </div>
         </div>
-        <div className="course">
+        <div className="course mb-5">
           <select id="course" name="course" value={inputs.course} onChange={handleChange} required>
             <option value="">Select Course</option>
             <option value="biology">Biology</option>
